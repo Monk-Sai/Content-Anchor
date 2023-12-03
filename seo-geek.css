@@ -11,7 +11,6 @@ header {
   }
 footer {
   display: flex;
-
 }
 
   body {
@@ -51,6 +50,9 @@ footer {
   .nav-ul a:hover {
     color: #ff8000;
   }
+  .nav-ul-mobile {
+    display: none;
+  }
 
   .hero-fold {
     color: #fff;
@@ -65,7 +67,7 @@ footer {
       font-size: 4.15rem;
       color: #000000;
     }
-    .hero-fold button {
+.hero-fold button {
       color: rgb(0, 0, 0);
       background-color: #ffffff;
       border: none;
@@ -77,6 +79,7 @@ footer {
     }
 .global-padding {
       padding: 0% 5% 0% 5%;
+      margin: 0%;
     }
 .hero-fold p{
     font-size: 2rem;
@@ -92,6 +95,12 @@ footer {
   text-align: center;
   align-items: center;
   column-gap: 10px;
+}
+.hero-fold-buttons {
+  width: 100%;
+}
+.hero-img {
+  height: 450px;
 }
 
 .fold-2 {
@@ -153,4 +162,91 @@ footer {
   padding-bottom: 5%;
   justify-content: center;
   font-size: 2rem;
+}
+.burger-icon {
+  display: none; /* Initially hide the burger icon */
+  cursor: pointer;
+}
+
+/* Add this media query for screens below 600px */
+@media only screen and (max-width: 600px) {
+  .nav-ul-mobile {
+    display: none; /* Hide the navigation links by default on small screens */
+  }
+
+  .burger-icon {
+    display: block; /* Show the burger icon */
+  }
+
+  /* Add styles for the navigation links when the burger icon is clicked */
+  .nav-ul.show {
+    display: block;
+  }
+
+  /* Style for the burger icon (you can customize this based on your design) */
+  .burger-icon:before {
+    content: '\2630'; /* Unicode character for the burger icon */
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-ul-mobile {
+    text-align: center;
+    display: none;
+  }
+
+  .nav-ul-mobile li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .hero-fold-grid {
+    display: block;
+  }
+
+  .hero-fold p {
+    font-size: 1.5rem
+  }
+  .hero-fold {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .hero-fold button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .fold-2 button,
+  .fold-3 button, .hero-fold button {
+    width: 35%;
+    font-size: 1rem;
+  }
+  .fold-2 a,
+  .fold-3 a, .hero-fold a {
+    padding: 0%;
+  }
+
+  .hero-img {
+    height: 275px;
+    display: flex;
+    align-items: start;
+  }
+  .hero-fold-grid p {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .hero-fold-grid h1 {
+    font-size: 2rem;
+  }
 }
