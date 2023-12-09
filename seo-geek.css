@@ -1,18 +1,45 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     width: auto;
     z-index: 95;
   }
+.header-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
 footer {
-  display: block;
-  height: 150px;
-  background-color: #000;
+  display: flex;
+  color: #fff;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    background-color: #20084c;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-name-and-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.footer-nav a{
+  text-decoration: none;
+  font-size: larger;
+  justify-content: center;
+  color: #fff;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
 }
 
   body {
@@ -22,7 +49,7 @@ footer {
     color: #000000;
   }
 
-  .logo-name a{
+  .logo-name a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,7 +98,7 @@ footer {
     }
 .hero-fold button {
       color: rgb(0, 0, 0);
-      background-color: #e59268;
+      background-color: #ffb66e;
       border: none;
       height: 60px;
       font-weight: 900;
@@ -117,30 +144,31 @@ footer {
     background-color: #fff;
     color: #000;
 }
+.fold-2 a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: default;
+}
 .fold-2 h2 {
     text-align: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3.25rem;
 }
 .fold-2 p {
   font-size: 1.25rem;
 }
 .fold-2 button {
-  color: rgb(0, 0, 0);
-  background-color: #e59268;
+  border-radius: 45px;
+  margin: 15px;
   border: none;
-  height: 60px;
-  font-weight: 600;
-  width: 250px;
-  font-size: 25px;
-  border-radius: 10px;
-}
-.fold-2 a {
-  text-decoration: none;
-  display: flex;
-  padding-top: 35px;
-  justify-content: center;
-  font-size: 2rem;
+  width: 12rem;
+  height: 55px;
+  font-size: 18px;
+  font-family: 'Open sans';
+  font-weight: 700;
+  background: #ffb66e;
+  cursor: pointer;
 }
 
 .fold-3{
@@ -148,7 +176,7 @@ footer {
   background-color: white ;
 }
 .fold-3 h2{
-  font-size: 2.5rem;
+  font-size: 3.25rem;
   margin: 0%;
   padding-bottom: 45px;
   text-align: center;
@@ -159,30 +187,32 @@ footer {
 .fold-3 p {
   font-size: 1.25rem;
 }
-.fold-3 button {
-  color: rgb(0, 0, 0);
-  background-color: #e59268;
-  border: none;
-  height: 60px;
-  font-weight: 600;
-  width: 250px;
-  font-size: 25px;
-  border-radius: 10px;
-}
 .fold-3 a {
-  text-decoration: none;
   display: flex;
-  padding-top: 35px;
-  padding-bottom: 5%;
   justify-content: center;
-  font-size: 2rem;
+  text-decoration: none;
+  cursor: default;
 }
+.fold-3 button {
+  border-radius: 45px;
+  margin: 15px;
+  border: none;
+  width: 12rem;
+  height: 55px;
+  font-size: 18px;
+  font-family: 'Open sans';
+  font-weight: 700;
+  background: #ffb66e;
+  cursor: pointer;
+}
+
+.fold-3-top-sect {
+  padding-bottom: 5rem;
+}
+
 .fold-3 li {
   font-size: larger;
   font-weight: 600;
-}
-.fold-3-block {
-  
 }
 
 .burger-icon {
@@ -229,8 +259,9 @@ footer {
 
 @media only screen and (max-width: 600px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
   }
+  
   .nav-ul {
     display: none;
   }
@@ -270,12 +301,14 @@ footer {
 
   .fold-2 button,
   .fold-3 button, {
-    width: 100%;
     font-size: 1rem;
+    padding: 0;
   }
-  .fold-2 a,
-  .fold-3 a, .hero-fold a {
-    padding: 0%;
+  .fold-3 h3{
+    font-size: 1.75rem;
+  }
+  .fold-3 p {
+    font-size: 1.25rem;
   }
   .hero-fold-buttons {
     width: 100%;
@@ -300,5 +333,92 @@ footer {
   }
   .hero-fold-grid h1 {
     font-size: 2rem;
+  }
+  .footer-name-and-brand {
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .footer-nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    justify-content: center;
+    color: #fff;
+  }
+  .footer-nav {
+    display: flex;
+    height: auto;
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+}
+
+.fold-3-block {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 5rem;
+}
+.fold-3-block-cloumn-content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.fold-3-block-h3 {
+  display: flex;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.fold-3-block-contents p{
+  font-size: 1.5rem;
+  margin: 0%;
+  text-align: justify;
+  padding: 0%;
+  height: 60%;
+}
+.fold-3-block-contents h4 {
+  font-size: 1.75rem;
+  margin: 0%;
+  text-align: center;
+  height: 30%;
+  padding-top: 2rem;
+}
+.fold-3-block-contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  padding: 5px 25px 5px 25px;
+  border: 3px solid #ebf7fe;
+  border-radius: 15px;
+  margin: 1.5rem;
+  height: 20rem;
+  width: 28rem;
+  text-align: left;
+}
+
+@media (max-width:768px) {
+  .fold-3-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+  .fold-3-block-contents p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0%;
+    text-align: justify;
+    padding: 0%;
+    height: 60%;
+  }
+  .fold-3-block-contents h4 {
+    font-size: 1.75rem;
+    margin: 0%;
+    text-align: center;
+    height: 30%;
+    padding-top: 1rem;
   }
 }
