@@ -4,6 +4,7 @@
   <title>Content Anchor | Best Tools for SEO and Conetnt Upgrades</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="content-anchor.css">
+  <link rel="stylesheet" href="quote-gen.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="#">
   <script src="content-anchor.js"></script>
@@ -33,3 +34,37 @@
     </nav>
   </div>
   </header>
+
+  <section>
+    <div class="quote-box">
+      <h2>Quote for you!</h2>
+      <blockquote id="quote">Loading...</blockquote>
+      <span id="author">Loading...</span>
+      <div>
+          <button onclick="getquote(api_url)">New Quote</button>
+          <button onclick="tweet()">Tweet</button>
+      </div>
+    </div>
+  </section>
+    <script>
+      const quote = document.getElementById("quote");
+      const author = document.getElementById("author");
+      const api_url = "https://api.quotable.io/random";
+      
+      async function getquote(url){
+        const response = await fetch(url);
+        var data = await response.json();
+        console.log(data);
+        quote.innerHTML = data.content;
+        author.innerHTML = data.author;
+      }
+
+      getquote(api_url);
+
+      function tweet(){
+        window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML, "Tweet Window", "width=650, height=300");
+      }
+
+    </script>
+  </body>
+</html>

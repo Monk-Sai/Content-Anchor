@@ -306,8 +306,7 @@ footer {
 
   .fold-2 button,
   .fold-3 button, {
-    font-size: 1rem;
-    padding: 0;
+s    font-size: 1.15rem;
   }
   .fold-3 h3{
     font-size: 1.75rem;
