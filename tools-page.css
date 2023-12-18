@@ -46,11 +46,17 @@ body{
 }
 .tools-container {
     border: 5px #0a0258;
+    border-radius: 25px;
     height: 10rem;
     width: 90%;
-    background: #dedaff;
+    background: #ffd278;
     margin: 1rem;
 }
+.tools-container a {
+    text-decoration: none;
+    color: #000;
+}
+
 .tools-container h3 {
     padding: 1rem;
 }
