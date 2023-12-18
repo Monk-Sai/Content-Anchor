@@ -3,7 +3,7 @@ const imgGallery = document.querySelector(".img-gallery");
 
 const OPENAI_API_KEY = "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";
 
-Const updateImageCard = (imgDataArray) => {
+const updateImageCard = (imgDataArray) => {
     imgDataArray.forEach((imgObject, index) => {
         const imgCard = imgGallery.querySelectorAll(".img-card")[index];
         const imgElement = imgCard.querySelector("img");
@@ -33,16 +33,15 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
             })
         });
 
-        if(!response.ok) throw new Error("Failed to generate images! Please try again.");
+       if(!response.ok) throw new Error("Failed to generate images! Please try again."); 
 
         const { data } = await response.json();
-        updateImageCard([...])
+        updateImageCard([...data])
         console.log(data)
     } catch (error) {
-        alert(error.message);
+        alter(error.message);
     }
 }
-
 
 const handleFormSubmission = (e) => {
     e.preventDefault();
@@ -59,9 +58,11 @@ const handleFormSubmission = (e) => {
         </div>`
     ).join("");
 
+    console.log(imgCardMarkup);
+
     imgGallery.innerHTML = imgCardMarkup;
     generateAiImages(userPrompt, userImgQuantity);
    
 }
 
-generateForm.addEventListener("submit", handleFormSubmission);
+generateForm.addEventListener("submit", handleFormSubmission); 

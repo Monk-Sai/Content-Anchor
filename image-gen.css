@@ -14,7 +14,7 @@ body{
     position: relative;
     align-items: center;
     justify-content: center;
-    background: url(imgs\banner-1.jpg);
+  /*   background: url(); */
     background-size: cover;
     background-position: center;
 }
@@ -27,7 +27,7 @@ body{
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    background: #121212;
+    background: #00118e;
 }
 
 .image-generator .content {
