@@ -38,7 +38,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
         const { data } = await response.json();
         updateImageCard([...data])
         console.log(data)
-    } catch (error) {
+    } catch (error) { 
         alter(error.message);
     }
 }

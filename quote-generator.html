@@ -34,8 +34,8 @@
     </nav>
   </div>
   </header>
-
-  <section>
+<main>
+  <section class="quote-container">
     <div class="quote-box">
       <h2>Quote for you!</h2>
       <blockquote id="quote">Loading...</blockquote>
@@ -46,26 +46,26 @@
       </div>
     </div>
   </section>
-    <script>
-      const quote = document.getElementById("quote");
-      const author = document.getElementById("author");
-      const api_url = "https://api.quotable.io/random";
-      
-      async function getquote(url){
-        const response = await fetch(url);
-        var data = await response.json();
-        console.log(data);
-        quote.innerHTML = data.content;
-        author.innerHTML = data.author;
-      }
+ <script src="quote-gen.js"></script>
 
-      getquote(api_url);
-
-      function tweet(){
-        window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML, "Tweet Window", "width=650, height=300");
-      }
-
-    </script>
+  </main>
   
+  <footer>
+    <div class="footer-name-and-brand">
+      <div>
+        <p>Content Anchor</p>
+      </div>
+      <div>
+        <p>Copyright © 2023 Content Anchor. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="https://contentanchor.com">Home</a>
+      <a href="https://contentanchor.com/about">About</a>
+      <a href="https://contentanchor.com/content-anchor-tools">Tools</a>
+      <a href="#">Blogs</a>
+      <a href="https://contentanchor.com/consult">Consult</a>
+    </div>
+  </footer>
   </body>
 </html>
