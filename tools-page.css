@@ -8,16 +8,17 @@ body{
 }
 
 .tools-display-container{
-    height: 100%;
+    height: 75rem;
     padding: 0px 0px 150px 0px;
 }
 
 .tools-hero-fold {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #0a0258;
-    background: linear-gradient(to bottom, rgb(248, 176, 176)30%, rgb(92, 92, 255));
+    background: linear-gradient(to bottom, rgb(255, 179, 179)30%, rgb(36, 36, 255));
     height: 396px;
     width: 100%;
     padding-top: 65px;
@@ -27,7 +28,15 @@ body{
     font-family: initial;
     font-size: 2.95rem;
     text-align: center;
-    width: 70%;
+    width: 90%;
+}
+.tools-hero-fold p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(252, 252, 252);
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 0rem 1.2rem;
 }
 .tools-hero-fold-2 {
     height: 750px;
@@ -52,10 +61,11 @@ body{
 .tools-container {
     border: 5px #0a0258;
     border-radius: 25px;
-    height: 10rem;
-    width: 45%;
+    height: 14rem;
+    width: 30rem;
     background: #ffd278;
     margin: 1.5rem;
+    box-shadow: 10px 10px rgb(15, 71, 90);
 }
 .tools-container a {
     text-decoration: none;
@@ -63,8 +73,56 @@ body{
 }
 
 .tools-container h3 {
-    padding: 1rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 20px;
 }
 .tools-container p {
-    padding: 1rem;
+    padding: 1rem 1.5rem 1rem 2rem;
+    font-size: 1.2rem;
 }
+.tools-container img {
+    position: absolute;
+    padding: 15px 0px 0px 55px;
+}
+
+@media screen and (max-width:768px) {
+   .tools-container {
+    border: 5px #0a0258;
+    border-radius: 25px;
+    height: 13rem;
+    width: 80%;
+    background: #ffd278;
+    margin: 1.5rem;
+ }
+ .tools-container img {
+    position: absolute;
+    padding: 25px 0px 0px 20%;
+    height: 40px;
+}
+}
+@media screen and (max-width:500px) {
+    .tools-container {
+     border: 5px #0a0258;
+     border-radius: 25px;
+     height: 13rem;
+     width: 80%;
+     background: #ffd278;
+     margin: 1.5rem;
+  }
+  .tools-container img {
+     position: absolute;
+     padding: 25px 0px 0px 18px;
+     height: 40px;
+ }
+ .tools-hero-fold-2 h2 {
+    padding: 5rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+.tools-display-container{
+    height: 95rem;
+    padding: 0px 0px 150px 0px;
+}
+ }
