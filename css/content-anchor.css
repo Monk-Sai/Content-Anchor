@@ -318,6 +318,12 @@ footer {
   .fold-3 button {
     font-size: 1.15rem;
   }
+  .fold-3 h2{
+    font-size: 1.55rem;
+    margin: 0%;
+    padding-bottom: 45px;
+    text-align: center;
+  }
   .fold-3 h3{
     font-size: 1.75rem;
   }
