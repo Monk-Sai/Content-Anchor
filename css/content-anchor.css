@@ -232,13 +232,8 @@ footer {
   margin: 0%;
   text-align: center
 }
+.fold-4-container {
 
-hr.solid {
-  border-top: 8px solid #ffa14a;
-  border-radius: 5px;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-  width: 80%;
 }
 
 /* Add this media query for screens below 600px */
@@ -455,4 +450,3 @@ hr.solid {
     padding-top: 1rem;
   }
 }
-
