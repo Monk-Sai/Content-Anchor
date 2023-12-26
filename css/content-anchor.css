@@ -45,7 +45,7 @@ footer {
   body {
     margin: 0px;
     background-color: #2d3250;
-    font-family: 'Quicksand';
+    font-family: 'Poppins';
     color: #000000;
   }
 
@@ -281,6 +281,19 @@ footer {
   .hero-fold-grid {
     display: block;
   }
+
+  .hero-fold h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.15rem;
+    color: #ffffff;
+  }
+
+  .fold-2 h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.75rem;
+}
 
   .hero-fold p {
     font-size: 1.5rem
