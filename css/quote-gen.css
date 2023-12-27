@@ -4,7 +4,7 @@
     box-sizing: 0;
 }
 body{
-    background: #bbc6fa;
+    background: #e5eaff;
 }
 
 .head-banner{
@@ -21,7 +21,7 @@ body{
     font-size: 1.8rem;
     color: #000000;
     text-shadow: #fff 0 2px 5px;
-    background: linear-gradient(to bottom, rgb(255, 249, 62)30%, rgb(208, 47, 253));
+    background: linear-gradient(to bottom, rgb(166, 216, 255)30%, rgb(255, 174, 219));
     height: 296px;
     width: 100%;
     padding-top: 60px;
