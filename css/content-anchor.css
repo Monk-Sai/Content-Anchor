@@ -391,7 +391,7 @@ footer {
     border: 3px solid #ceedff;
     border-radius: 15px;
     margin: 0.75rem;
-    height: 20rem;
+    height: 18rem;
     width: 28rem;
     text-align: left;
   }
@@ -409,7 +409,7 @@ footer {
     height: 275px;
     display: flex;
     align-items: start;
-  }
+  } 
   .hero-fold-grid p {
     padding-left: 25px;
     padding-right: 25px;
