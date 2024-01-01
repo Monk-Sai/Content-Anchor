@@ -72,6 +72,12 @@ body{
     color: #000;
 }
 
+.tool-conta-head-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tools-container h3 {
     padding: 2rem;
     text-align: center;
@@ -81,10 +87,10 @@ body{
     padding: 1rem 1.5rem 1rem 2rem;
     font-size: 1.2rem;
 }
-.tools-container img {
+/* .tools-container img {
     position: absolute;
     padding: 15px 0px 0px 55px;
-}
+} */
 
 @media screen and (max-width:768px) {
    .tools-container {
@@ -95,9 +101,14 @@ body{
     background: #ffd278;
     margin: 1.5rem;
  }
+ .tools-container h3 {
+    padding: 1.25rem 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
  .tools-container img {
-    position: absolute;
-    padding: 25px 0px 0px 20%;
+    position: relative;
+    padding: 0;
     height: 40px;
 }
 .tools-display-container{
@@ -114,15 +125,25 @@ body{
      background: #ffd278;
      margin: 1.5rem;
   }
+  .tools-container h3 {
+    padding: 1.25rem 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
   .tools-container img {
-     position: absolute;
-     padding: 25px 0px 0px 20%;
-     height: 40px;
+    position: relative;
+    padding: 0;
+    height: 40px;
  }
  .tools-display-container{
      height: 95rem;
      padding: 0px 0px 150px 0px;
  }
+ .tool-conta-head-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  }
 @media screen and (max-width:500px) {
     .tools-container {
@@ -133,10 +154,15 @@ body{
      background: #ffd278;
      margin: 1.5rem;
   }
+  .tools-container h3 {
+    padding: 1.25rem 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
   .tools-container img {
-     position: absolute;
-     padding: 25px 0px 0px 5%;
-     height: 40px;
+    position: relative;
+    padding: 0;
+    height: 40px;
  }
  .tools-hero-fold-2 h2 {
     padding: 5rem 1rem;
@@ -148,6 +174,11 @@ body{
     height: 95rem;
     padding: 0px 0px 150px 0px;
 }
+.tool-conta-head-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 @media screen and (max-width:324px) {
     .tools-container {
@@ -158,13 +189,23 @@ body{
      background: #ffd278;
      margin: 1.5rem;
   }
+  .tools-container h3 {
+    padding: 1.25rem 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
   .tools-container img {
-     position: absolute;
-     padding: 25px 0px 0px 5%;
-     height: 40px;
+    position: relative;
+    padding: 0;
+    height: 40px;
  }
  .tools-display-container{
      height: 95rem;
      padding: 0px 0px 150px 0px;
  }
+ .tool-conta-head-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  }
