@@ -6,6 +6,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://contentanchor.com/blogs</loc>
+  <lastmod>2023-12-23T11:36:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://contentanchor.com/about</loc>
   <lastmod>2023-12-23T11:36:32+00:00</lastmod>
   <priority>0.80</priority>
