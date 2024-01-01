@@ -41,6 +41,10 @@ color: #fff;
 display: flex;
 flex-direction: column;
 }
+footer .brand-name-foot {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
 
 body {
   margin: 0px;
