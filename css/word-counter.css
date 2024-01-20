@@ -71,3 +71,10 @@ body{
     font-size: 36px;
     font-weight: bold;
 }
+
+.word-count-top-content {
+    background: rgb(255, 200, 134);
+    height: 25rem;
+    text-align: center;
+    padding: 10% 0;
+}

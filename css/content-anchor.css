@@ -267,7 +267,7 @@ padding: 0.45rem 1.25rem 0.45rem 1.25rem;
 border: 3px solid #ceedff;
 border-radius: 15px;
 margin: 0.75rem;
-height: 20rem;
+height: 15rem;
 width: 28rem;
 text-align: left;
 }
@@ -287,6 +287,14 @@ height: 450px;
 .fold-4 h2{
 margin: 0%;
 text-align: center
+}
+
+.tools-page-content {
+  padding: 3%;
+  display: flex;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
 }
 
 /* Add this media query for screens below 600px */
