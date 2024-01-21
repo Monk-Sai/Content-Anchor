@@ -16,8 +16,8 @@ justify-content: space-between;
 flex-direction: row-reverse;
 }
 footer {
-display: flex;
-color: #fff;
+  display: flex;
+  color: #fff;
   flex-direction: row;
   width: 100%;
   height: 250px;
@@ -63,27 +63,65 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
-
-.nav-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} 
-.nav-ul li {
+ 
+.nav-ul-mobile li {
   display: inline-block;
   font-size: large;
   font-weight: bold;
   font-family: 'quicksand';
   padding: 10px;
 }
-.nav-ul a {
-  text-decoration: none;
-  color: #000;
-}
-.nav-ul a:hover {
-  color: #ff8000;
+.nav-ul-mobile a {
+  width: 100%;
 }
 .nav-ul-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(206, 206, 206, 0.543);
+  backdrop-filter: blur(5px);
+  box-shadow: -1px 0 10px #000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+nav li {
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+nav a:hover {
+  background-color: #c7a8ff2e;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.menu-button{
   display: none;
 }
 
@@ -272,11 +310,6 @@ width: 28rem;
 text-align: left;
 }
 
-.burger-icon {
-display: none; /* Initially hide the burger icon */
-cursor: pointer;
-}
-
 .fold-4{
 padding: 1rem 0rem 1rem 0rem;
 background-color: white ;
@@ -298,9 +331,10 @@ text-align: center
 }
 
 /* Add this media query for screens below 600px */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 .nav-ul-mobile {
   display: flex; /* Hide the navigation links by default on small screens */
+  margin: 0;
 }
 
 .burger-icon {
@@ -318,11 +352,17 @@ text-align: center
   content: '\2630'; /* Unicode character for the burger icon */
   font-size: 24px;
 }
+.hideOnMobile {
+  display: none;
+}
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 header {
   flex-direction: row;
+}
+.menu-button{
+  display: block;
 }
 
 .nav-ul {
@@ -476,5 +516,8 @@ to {opacity: 1}
   text-align: center;
   height: 30%;
   padding-top: 1rem;
+}
+.hideOnMobile {
+  display: none;
 }
 }
