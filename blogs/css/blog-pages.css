@@ -184,6 +184,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		margin-top: 1rem;
 	}
 
 /* Container */
@@ -2398,7 +2399,7 @@ input, select, textarea {
 		/* Header */
 
 			.head-band {
-				padding: 4em 0 3em 0;
+				padding: 0em 0 0em 0;
 			}
 
 		/* Banner */
@@ -2481,7 +2482,7 @@ input, select, textarea {
 				}
 
 			.head-band {
-				padding: 3.5em 0 3em 0;
+				padding: 1em 0 1em 0;
 			}
 
 		/* Nav */
