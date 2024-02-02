@@ -3,31 +3,38 @@
 <head>
   <title>Rank Higher on Google: The Ultimate SEO Blogging Guide</title>
   <meta name="description" content="Conquer Google search results and skyrocket your blog traffic with this comprehensive guide! Discover 10 powerful SEO strategies for crafting blog posts that dominate search engines and attract droves of engaged readers. From keyword mastery to technical SEO optimization, unlock the secrets to writing content that Google loves and your audience craves.">
-  <link rel="stylesheet" href="css/content-anchor.css">
   <link rel="stylesheet" href="css/blog-pages.css">
+  <link rel="stylesheet" href="../css/content-anchor.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imgs\content-anchor-favicon.png">
+  <link rel="icon" href="..\imgs\content-anchor-favicon.png">
   <link rel="canonical" href="https://contentanchor.com">
-  <script src="js/content-anchor.js"></script>
+  <script src="../js/content-anchor.js"></script>
 </head>
 <body>
-<header>
-  <div><a href="https://contentanchor.com">
-    <picture><img src="imgs\Content.png" width="70px" height="65px"></picture></a>
-  </div> 
-  <div class="header-row-desk">
-    <div class="burger-icon" onclick="toggleNav()"></div>
-    <nav>
-      <ul class="nav-ul">
-        <li><a href="https://contentanchor.com">Home</a></li>
-        <li><a href="https://contentanchor.com/about">About</a></li>
-        <li><a href="https://contentanchor.com/content-anchor-tools">Tools</a></li>
-        <li><a href="https://contentanchor.com/blogs">Blogs</a></li>
-        <li><a href="https://contentanchor.com/consult">Consult</a></li>
-      </ul>
-    </nav>
-  </div>
-  </header>
+
+    <header>
+        <nav>
+          <div><a href="https://contentanchor.com">
+           <picture><img src="imgs\Content.png" width="70px" height="65px"></picture></a>
+          </div>
+          <ul class="nav-ul-mobile">
+            <li class="menu-button" onclick=hideNavHeader()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <li><a href="https://contentanchor.com">Home</a></li>
+            <li><a href="https://contentanchor.com/about">About</a></li>
+            <li><a href="https://contentanchor.com/content-anchor-tools">Tools</a></li>
+            <li><a href="https://contentanchor.com/blogs">Blogs</a></li>
+            <li><a href="https://contentanchor.com/consult">Consult</a></li>
+          </ul> 
+          <ul>
+              <li class="hideOnMobile"><a href="https://contentanchor.com">Home</a></li>
+              <li class="hideOnMobile"><a href="https://contentanchor.com/about">About</a></li>
+              <li class="hideOnMobile"><a href="https://contentanchor.com/content-anchor-tools">Tools</a></li>
+              <li class="hideOnMobile"><a href="https://contentanchor.com/blogs">Blogs</a></li>
+              <li class="hideOnMobile"><a href="https://contentanchor.com/consult">Consult</a></li>
+              <li class="menu-button" onclick="showNavHeader()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </ul>
+        </nav>
+      </header>
   
   <section id="main">
     <div class="container">
@@ -162,7 +169,7 @@
 										</div>
 										<p>The digital world is fast-paced and is dominated by websites and content that check the boxes for the mighty SEO. And if you want to stand out, you need to create a solid SEO strategy.</p>
 										<div class="aside-btn">
-											<a href="blogs\a-complete-guide-to-seo-content-in-2024" class="button alt">Explore</a>
+											<a href="https://contentanchor.com/blogs/a-complete-guide-to-seo-content-in-2024" class="button alt">Explore</a>
                                         </div>
 								</section>
 
