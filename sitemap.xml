@@ -4,3 +4,7 @@
     <loc>https://contentanchor.com</loc>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://contentanchor.com/blog</loc>
+    <priority>1</priority>
+  </url>
