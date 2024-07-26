@@ -1,0 +1,629 @@
+:root {
+  font-size: 1rem;
+
+  --color-primary: #ff661f;
+  --color-secondary: #fff;
+  --color-font: #000;
+  --color-shadow: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+i,
+h1,
+ol,
+ul,
+li {
+  color: #0d0013;
+  padding: 1rem 0;
+}
+
+ol,
+ul,
+li {
+  padding: 0 1rem;
+}
+
+p,
+ol,
+li {
+  font-size: 1.1rem;
+  width: 80%;
+  line-height: 25px;
+}
+
+i {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 2.45rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/* Header CSS */
+header {
+  font-family: "Inter", sans-serif;
+  height: 70px;
+  display: flex;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff661f;
+}
+
+/* Footer CSS */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0 0 0;
+  background-color: #fff5ee;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: larger;
+  justify-content: center;
+  color: #000000;
+  padding: 15px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-creds {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+
+.footer-creds p {
+  display: inline;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.brand-name-foot {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-name-foot p {
+  display: flex;
+  font-weight: 800;
+  font-size: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+
+.logo-name a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: x-large;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-ul-mobile li {
+  display: inline-block;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+}
+
+.nav-ul-mobile a {
+  width: 100%;
+}
+
+.nav-ul-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #000000c9;
+  backdrop-filter: blur(5px);
+  box-shadow: -1px 0 10px #000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+ul li {
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+nav li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #ff661f;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.menu-button {
+  display: none;
+  align-items: center;
+  color: #ff661f;
+}
+
+.hero-fold {
+  color: #000;
+  text-align: center;
+  width: auto;
+  padding: 50px 25px 45px 25px;
+  margin: 25px 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-fold-h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  padding: 0 20px;
+}
+
+.hero-fold-h1 p {
+  width: 100%;
+  font-size: 18px;
+}
+
+.hero-fold button {
+  color: rgb(0, 0, 0);
+  background-color: var(--color-primary);
+  border: none;
+  height: 60px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px 0px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.hero-fold button:hover {
+  box-shadow: #000000;
+  cursor: pointer;
+}
+
+.hero-fold-grid {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10%;
+  text-align: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.hero-fold-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  justify-items: center;
+  width: 100%;
+}
+
+.hero-fold-img {
+  display: flex;
+  width: 45%;
+}
+
+.fold-2 {
+  margin: 15px 0;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 3px solid #e3e3e6;
+}
+.fold-2-content h2 {
+  font-size: 32px;
+}
+
+.fold-2-content {
+  width: 45%;
+}
+.fold-2-content h2 {
+  width: 100%;
+  text-align: center;
+}
+.fold-2-content p{
+  width: 100%;
+}
+.fold-2-img {
+  width: 40%;
+}
+
+.fold-3 {
+  padding: 1rem 0rem 1rem 0rem;
+  background-color: white;
+}
+
+.fold-3 h2 {
+  font-size: 3.25rem;
+  margin: 0%;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.fold-3 h3 {
+  font-size: 2.25rem;
+}
+
+.fold-3 a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: default;
+}
+
+.fold-3 button {
+  border-radius: 45px;
+  margin: 15px;
+  border: none;
+  width: 12rem;
+  height: 55px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  background: #ffb66e;
+  cursor: pointer;
+}
+
+.fold-3-top-sect {
+  padding-bottom: 1rem;
+}
+
+.fold-3 li {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.fold-3-block {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+.fold-3-block-cloumn-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.fold-3-block-contents h4 {
+  font-size: 1.25rem;
+  margin: 0%;
+  text-align: center;
+  height: 30%;
+  padding-top: 1rem;
+  padding-right: 35px;
+}
+
+.fold-3-block-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  padding: 0.45rem 1.25rem 0.45rem 1.25rem;
+  border: 3px solid #ceedff;
+  border-radius: 15px;
+  margin: 0.75rem;
+  height: 15rem;
+  width: 28rem;
+  text-align: left;
+}
+
+.fold-4 {
+  padding: 1rem 0rem 1rem 0rem;
+  background-color: white;
+  margin: 0%;
+  border: 0%;
+  height: 450px;
+}
+
+.fold-4 h2 {
+  margin: 0%;
+  text-align: center
+}
+
+.tools-page-content {
+  padding: 3%;
+  display: flex;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  line-height: 25px;
+}
+
+/* Add this media query for screens below 600px */
+@media (max-width: 600px) {
+  .nav-ul-mobile {
+    display: flex;
+    /* Hide the navigation links by default on small screens */
+    margin: 0;
+  }
+
+  .burger-icon {
+    display: flex;
+    /* Show the burger icon */
+  }
+
+  /* Add styles for the navigation links when the burger icon is clicked */
+  .nav-ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style for the burger icon (you can customize this based on your design) */
+  .burger-icon:before {
+    content: '\2630';
+    /* Unicode character for the burger icon */
+    font-size: 24px;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-ul-mobile {
+    text-align: center;
+    display: none;
+  }
+
+  .header-row-desk {
+    display: none;
+  }
+
+  .nav-ul-mobile li {
+    display: block;
+    padding: 10px 0px;
+  }
+
+  .hero-fold-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .hero-fold h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.15rem;
+    color: #000000;
+  }
+
+  .hero-fold-h1 {
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero-fold-img {
+    display: flex;
+    width: 95%;
+  }
+
+  .hero-fold p {
+    font-size: 1.125rem
+  }
+
+  .hero-fold {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    margin: 25px 0;
+    justify-content: flex-start;
+  }
+  .fold-2 {
+    margin: 15px 0;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 3px solid #e3e3e6;
+  }
+  .fold-2-content {
+    width: 100%;
+  }
+  .fold-2-img {
+    width: 90%;
+  }
+}
+
+.hero-fold button {
+  color: rgb(0, 0, 0);
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px 0px;
+  font-size: 17px;
+  font-weight: 700;
+  width: 9rem;
+  border-radius: 10px;
+}
+
+.fold-3 button {
+  font-size: 1.15rem;
+}
+
+.fold-3 h2 {
+  font-size: 1.55rem;
+  margin: 0%;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.fold-3 h3 {
+  font-size: 1.75rem;
+}
+
+.fold-3 p {
+  font-size: 1.25rem;
+}
+
+.fold-3-block-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 3px solid #ceedff;
+  border-radius: 15px;
+  margin: 0.75rem;
+  height: 18rem;
+  width: 28rem;
+  text-align: left;
+}
+
+.hero-fold-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-img {
+  height: 275px;
+  display: flex;
+  align-items: start;
+}
+
+.hero-fold-grid h1 {
+  font-size: 2rem;
+}
+
+
+.footer-nav {
+  display: block;
+  height: auto;
+  flex-direction: column;
+  line-height: 50px;
+}
+
+.footer-creds p {
+  font-size: 1rem;
+}
+
+
+/* 
+@media (max-width:768px) {
+  .fold-3-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .fold-3-block-contents p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0%;
+    text-align: justify;
+    padding: 1rem;
+    height: 60%;
+  }
+
+  .fold-3-block-contents h4 {
+    font-size: 1.25rem;
+    margin: 0%;
+    text-align: center;
+    height: 30%;
+    padding-top: 1rem;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+} */
