@@ -44,7 +44,6 @@ p,
 ol,
 li {
   font-size: 1.1rem;
-  width: 80%;
   line-height: 25px;
 }
 
@@ -53,12 +52,11 @@ i {
 }
 
 h1 {
-  font-size: 2.45rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  width: 80%;
+  font-size: 2rem;
 }
 
 h3 {
@@ -225,6 +223,24 @@ nav a {
   color: #ff661f;
 }
 
+.banner-fold {
+  background: #fed7c1;
+}
+.banner-fold-col {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-fsl {
+  font-size: larger;
+  font-weight: 500;
+  padding: 25px 0;
+}
+.banner-fsr {
+
+}
+
 .hero-fold {
   color: #000;
   text-align: center;
@@ -300,34 +316,42 @@ nav a {
 }
 
 .fold-2 {
-  margin: 15px 0;
   padding: 50px 20px;
   display: flex;
-  background: #f5f5f5cc;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
-.fold-2-content h2 {
-  font-size: 32px;
-}
-
 .fold-2-content {
   width: 45%;
 }
-
 .fold-2-content h2 {
   width: 100%;
   text-align: center;
+  font-size: 32px;
+  padding: 20px 0;
 }
-
 .fold-2-content p {
   width: 100%;
+}
+.fold-2-content li {
+  padding: 10px 0;
 }
 
 .fold-2-img {
   width: 40%;
+}
+
+.fold-3 {
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.fold-3-content {
+
 }
 
 /* Add this media query for screens below 600px */
@@ -433,8 +457,7 @@ nav a {
   }
 
   .fold-2 {
-    margin: 15px 0;
-    padding: 50px 20px;
+    padding: 25px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -443,6 +466,7 @@ nav a {
 
   .fold-2-content {
     width: 100%;
+    padding: 20px 0;
   }
 
   .fold-2-img {

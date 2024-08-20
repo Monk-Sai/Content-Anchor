@@ -1,0 +1,250 @@
+
+:root {
+    font-size: 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-fold {
+    display: flex;
+    flex-direction: column;
+    height: 50ch;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffc397;
+}
+.first-fold h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+.first-fold p {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.input-fields-space {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    background: antiquewhite;
+}
+.input-submit-btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.input-submit-btn button {
+    width: 120px;
+    cursor: pointer;
+    height: 45px;
+    border: 2px solid;
+    background-color: var(--color-primary);
+    border: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0px 0px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+}
+.input-field-T1 {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+.input-field-T1 label {
+    padding: 0 20px 0 0;
+    font-weight: 700;
+}
+.input-field-T1 input {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 40%;
+}
+
+/* Tools Directory */
+.tools-sect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px #393939;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 25px 0;
+    justify-content: center;
+}
+.tools-sect h2 {
+    padding: 0 0 50px 0;
+    text-align: center;
+    width: 100%;
+}
+.tool-prev-box {
+    width: 125px;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    background: #ffdbad;
+    border: 1px solid #db8514;
+    box-shadow: 2px 5px #db8514;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.tool-prev-box a {
+    text-decoration: none;
+}
+.tool-prev-box img {
+    width: 100px;
+}
+.tool-prev-box h3 {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+.tool-prev-box :hover {
+    background: #ffdbad;
+}
+.tools-pane {
+    display: flex;
+    border: 1px solid #d5d5d5;
+    box-shadow: 2px 5px #d5d5d5;
+    background: #ffe8d7;
+    border-radius: 20px;
+    padding: 25px 0;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Ngrams */
+.result {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result h2 {
+    padding: 20px 0;
+    width: auto;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th{
+    background-color: bisque;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+.content-fold {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.content-sec {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-sec h2 {
+    width: 80%;
+    padding: 20px 0;
+}
+.content-sec p {
+    width: 80%;
+}
+
+.faq-fold-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FAQ-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 15px;
+    border: 2px solid #b4b4b4;
+    box-shadow: 5px 5px #b4b4b4;
+    border-radius: 12px;
+    margin: 50px 0;
+}
+.FAQ-sec h2 {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    border-bottom: 2px solid #d5d5d5;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+}
+.FAQ-sec h3 {
+    width: 80%;
+}
+.FAQ-sec p {
+    width: 80%;
+    padding: 20px 0;
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 600px) {
+    .input-field-T1 {
+        display: flex;
+        padding: 20px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input-field-T1 input {
+        padding: 10px;
+        border: 2px solid;
+        border-radius: 5px;
+        width: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .content-sec {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-sec h2 {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .content-sec p {
+        width: 100%;
+    }
+    .FAQ-sec {
+        width: 100%;
+    }
+    .FAQ-sec h3 {
+        width: 100%;
+    }
+    .FAQ-sec p {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
