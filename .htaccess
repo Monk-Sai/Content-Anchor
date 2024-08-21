@@ -16,5 +16,3 @@ RewriteRule . /blog/index.php [L]
 </IfModule>
 
 # END WordPress
-
-DirectoryIndex content-and-seo-tools.html
