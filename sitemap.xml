@@ -8,3 +8,7 @@
     <loc>https://contentanchor.com/blog</loc>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://contentanchor.com/content-and-seo-tools/</loc>
+    <priority>1</priority>
+  </url>
