@@ -10,8 +10,8 @@
         content="Learn about N-grams and also try out the N-grams SEO tool. Optimize with proper research using N-grams">
     <link rel="stylesheet" href="..\css/tool-page.css">
     <link rel="stylesheet" href="..\css/content-anchor.css">
-    <link rel="canonical" href="https://contentanchor.com/ngrams-seo">
-    <script src="..\js/content-anchor.js"></script>
+    <link rel="canonical" href="https://contentanchor.com/text-to-html-ratio">
+    <script src="../js/content-anchor.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <div class="header-logo">
                 <a href="https://contentanchor.com"><img src="../imgs/Content-Anchor-Logo.svg"></a>
                 <a href="https://contentanchor.com">Content Anchor</a>
-              </div>
+            </div>
             <ul class="nav-ul-mobile">
                 <li class="menu-button" onclick=hideNavHeader()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="26" viewBox="0 -960 960 960" width="26">
@@ -50,49 +50,50 @@
 
     <main>
         <section class="first-fold">
-            <h1>N-grams SEO</h1>
-            <p>N-grams in SEO are sequences of consecutive items like words, characters, etc. from a website or webpage.
-                They are used in natural language processing to analyze text patterns and relationships.</p>
+            <h1>Text To HTML Ratio Calculator</h1>
+            <p></p>
         </section>
         <section class="input-fields-space">
             <div class="input-field-T1">
-                <label for="url">Enter your URL:</label>
-                <input type="url" id="url" name="url" placeholder="Please enter a URL">
-            </div>
-            <div class="input-field-T1">
-                <label for="exclude-words">Words to exclude (comma-separated):</label>
-                <input type="text" id="exclude-words" name="exclude-words" placeholder="Words to exclude">
+                <label for="urlInput">Enter your URL:</label>
+                <input type="url" id="urlInput" name="url" placeholder="Please enter a URL">
             </div>
             <div class="input-submit-btn">
-                <button onclick="seoAnalysis()">Analyze</button>
+                <button onclick="startCrawling()">Analyze</button>
+            </div>
+        </section>
+        <section class="output-sec">
+            <div id="output">
+
+                <div class="ratioOutput-sec">
+                    <h2>Text-to-HTML Ratio: </h2>
+                    <p id="ratioOutput"></p>
+                </div>
+
+                <h2>Extracted Text Content:</h2>
+                <textarea id="textOutput" readonly></textarea>
+
+                <h2>Extracted HTML Content:</h2>
+                <textarea id="htmlOutput" readonly></textarea>
             </div>
         </section>
 
-        <div id="results" class="result"></div>
-
         <article class="content-fold">
             <section class="content-sec">
-                <h2>What are Ngrams</h2>
-                <p><strong>Ngrams are sequences or combinations of words used in natural language processing. They help
-                        computers understand the patterns and relationships between words in a webpage or
-                        website.</strong> Essentially, they are group of consecutive words that are present frequently
-                    around the content. For instance, “Ngrams SEO” is a bigram (a sequence of two words). By analyzing
-                    these word combinations, computers can better understand and process human language. N-grams are
-                    fundamental building blocks for various language-related applications including search engines.</p>
+                <h2>What is Text to HTML Ratio</h2>
+                <p></p>
             </section>
             <section class="faq-fold-content">
                 <div class="FAQ-sec">
                     <h2>Frequently Asked Questions</h2>
                     <br>
-                    <h3>What are different types of N-grams?</h3>
-                    <p>N-grams are basically single or combination of multiple words together and their frequency
-                        through
-                        out the webpage. Some of the types of N-grams are, Bi-grams(two words) and Tri-grams(three
-                        words).
-                    </p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </section>
         </article>
+
+
     </main>
 
     <footer>
@@ -113,6 +114,6 @@
         </div>
     </footer>
 </body>
-<script src="..\js/ngrams.js"></script>
+<script src="../js/text-to-html.js"></script>
 
 </html>

@@ -73,6 +73,13 @@ header {
 .header-logo {
   display: flex;
   align-items: center;
+  width: max-content;
+}
+
+.header-logo img {
+  display: flex;
+  align-items: center;
+  width: 50px;
 }
 
 .header-logo a {
@@ -81,6 +88,7 @@ header {
   font-size: 24px;
   font-weight: 600;
   color: #ff661f;
+  margin: 0 0 0 10px;
 }
 
 /* Footer CSS */
@@ -90,7 +98,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 20px 0 0 0;
-  background-color: #fff5ee;
+  background-color: #ffdec6;
 }
 
 .footer-nav a {
@@ -187,7 +195,7 @@ ul li {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: 0 2px 20px 0px #c0c0c0;
 }
 

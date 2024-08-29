@@ -141,43 +141,6 @@ async function seoAnalysis() {
         const parser = new DOMParser();
         const doc = parser.parseFromString(text, 'text/html');
 
-       /*  // Extract title and description
-        const title = doc.querySelector('title') ? doc.querySelector('title').innerText : null;
-        const description = doc.querySelector('meta[name="description"]') ? doc.querySelector('meta[name="description"]').content : null; */
-
-        let good = [];
-        let bad = [];
-
-        /* // Title and description check
-        if (title) {
-            good.push("Title Exists! Great!");
-        } else {
-            bad.push("Title does not exist! Add a Title");
-        }
-
-        if (description) {
-            good.push("Description Exists! Great!");
-        } else {
-            bad.push("Description does not exist! Add a Meta Description");
-        } */
-
-        /* // Headings check
-        const hTags = [];
-        ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach(tag => {
-            doc.querySelectorAll(tag).forEach(elem => {
-                good.push(`${tag.toUpperCase()} --> ${elem.innerText.trim()}`);
-                hTags.push(tag);
-            });
-        });
-
-        if (!hTags.includes('h1')) {
-            bad.push("No H1 found!");
-        } */
-
-       /*  // Images without alt attribute
-        doc.querySelectorAll('img:not([alt])').forEach(img => {
-            bad.push(`No Alt: ${img.outerHTML}`);
-        }); */
 
         // Text processing
         const bodyText = doc.body.innerText.toLowerCase();
