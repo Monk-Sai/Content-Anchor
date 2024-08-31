@@ -44,34 +44,37 @@ function expand4(){
 }
 
 /* f2-5-cc carousal */
-function carousel() {
-  const carouselItems = carouselContainer.querySelectorAll('.f2-5-cc-1, .f2-5-cc-2, .f2-5-cc-3');
-  const btnLeft = document.getElementById('.f2-5-svg-btn-left');
-  const btnRight = document.getElementById('.f2-5-svg-btn-right');
+document.addEventListener('DOMContentLoaded', () => {
+  carousel();
+});
 
+function carousel() {
+  const carouselItems = document.querySelectorAll('.f2-5-cc-1, .f2-5-cc-2, .f2-5-cc-3');
+  const btnLeft = document.querySelector('.f2-5-svg-btn-left');
+  const btnRight = document.querySelector('.f2-5-svg-btn-right');
   let currentIndex = 0;
 
-  function showItem(index) {
+  if (!btnLeft || !btnRight || carouselItems.length === 0) {
+    console.error('Carousel elements are missing');
+    return;
+  }
+
+  function updateCarousel(index) {
     carouselItems.forEach((item, i) => {
-      if (i === index) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+      item.style.display = i === index ? 'block' : 'none';
     });
   }
 
   btnLeft.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-    showItem(currentIndex);
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
+    updateCarousel(currentIndex);
   });
 
   btnRight.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % carouselItems.length;
-    showItem(currentIndex);
+    currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel(currentIndex);
   });
 
-  showItem(currentIndex); // Show the initial item
+  // Initialize the carousel by showing the first item
+  updateCarousel(currentIndex);
 }
-
-carousel();

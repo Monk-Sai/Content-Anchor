@@ -403,6 +403,7 @@ nav a {
   align-items: center;
   padding: 20px;
   flex-direction: row;
+  width: 45%;
 }
 .f2-5-cc-1 {
   display: flex;
