@@ -683,4 +683,12 @@ nav a {
   .f2-5-img-carousal {
     width: auto;
   }
+  .f2-5-cc-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    width: 100%;
+  }
 }

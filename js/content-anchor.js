@@ -11,36 +11,81 @@ function expand(){
   const dropdown = document.querySelector('.fold-4-hide-seek-con p')
   dropdown.style.display = 'flex'
 
-  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con1 p', '.fold-4-hide-seek-con2 p', '.fold-4-hide-seek-con3 p', '.fold-4-hide-seek-con4 p')
+  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con1 p')
   alterdrop0.style.display = 'none'
+
+  const alterdrop1 = document.querySelector('.fold-4-hide-seek-con2 p')
+  alterdrop1.style.display = 'none'
+
+  const alterdrop2 = document.querySelector('.fold-4-hide-seek-con3 p')
+  alterdrop2.style.display = 'none'
+
+  const alterdrop3 = document.querySelector('.fold-4-hide-seek-con4 p')
+  alterdrop3.style.display = 'none'
 }
 function expand1(){
   const dropdown = document.querySelector('.fold-4-hide-seek-con1 p')
   dropdown.style.display = 'flex'
 
-  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p', '.fold-4-hide-seek-con2 p', '.fold-4-hide-seek-con3 p', '.fold-4-hide-seek-con4 p')
+  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p')
   alterdrop0.style.display = 'none'
+
+  const alterdrop1 = document.querySelector('.fold-4-hide-seek-con2 p')
+  alterdrop1.style.display = 'none'
+
+  const alterdrop2 = document.querySelector('.fold-4-hide-seek-con3 p')
+  alterdrop2.style.display = 'none'
+
+  const alterdrop3 = document.querySelector('.fold-4-hide-seek-con4 p')
+  alterdrop3.style.display = 'none'
 }
 function expand2(){
   const dropdown = document.querySelector('.fold-4-hide-seek-con2 p')
   dropdown.style.display = 'flex'
 
-  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p', '.fold-4-hide-seek-con1 p', '.fold-4-hide-seek-con3 p', '.fold-4-hide-seek-con4 p')
+  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p')
   alterdrop0.style.display = 'none'
+
+  const alterdrop1 = document.querySelector('.fold-4-hide-seek-con1 p')
+  alterdrop1.style.display = 'none'
+
+  const alterdrop2 = document.querySelector('.fold-4-hide-seek-con3 p')
+  alterdrop2.style.display = 'none'
+
+  const alterdrop3 = document.querySelector('.fold-4-hide-seek-con4 p')
+  alterdrop3.style.display = 'none'
 }
 function expand3(){
   const dropdown = document.querySelector('.fold-4-hide-seek-con3 p')
   dropdown.style.display = 'flex'
 
-  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p', '.fold-4-hide-seek-con1 p', '.fold-4-hide-seek-con2 p', '.fold-4-hide-seek-con4 p')
+  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p')
   alterdrop0.style.display = 'none'
+
+  const alterdrop1 = document.querySelector('.fold-4-hide-seek-con1 p')
+  alterdrop1.style.display = 'none'
+
+  const alterdrop2 = document.querySelector('.fold-4-hide-seek-con2 p')
+  alterdrop2.style.display = 'none'
+
+  const alterdrop3 = document.querySelector('.fold-4-hide-seek-con4 p')
+  alterdrop3.style.display = 'none'
 }
 function expand4(){
   const dropdown = document.querySelector('.fold-4-hide-seek-con4 p')
   dropdown.style.display = 'flex'
 
-  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p', '.fold-4-hide-seek-con1 p', '.fold-4-hide-seek-con2 p', '.fold-4-hide-seek-con3 p')
+  const alterdrop0 = document.querySelector('.fold-4-hide-seek-con p')
   alterdrop0.style.display = 'none'
+
+  const alterdrop1 = document.querySelector('.fold-4-hide-seek-con1 p')
+  alterdrop1.style.display = 'none'
+
+  const alterdrop2 = document.querySelector('.fold-4-hide-seek-con2 p')
+  alterdrop2.style.display = 'none'
+
+  const alterdrop3 = document.querySelector('.fold-4-hide-seek-con3 p')
+  alterdrop3.style.display = 'none'
 }
 
 /* f2-5-cc carousal */
