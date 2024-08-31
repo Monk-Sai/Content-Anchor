@@ -517,6 +517,7 @@ nav a {
   background-color: #ff661f;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .fold-4 {

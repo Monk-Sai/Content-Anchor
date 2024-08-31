@@ -102,9 +102,11 @@
 }
 .tool-prev-box a {
     text-decoration: none;
+    display: contents;
 }
 .tool-prev-box img {
-    width: 100px;
+    width: 96px;
+    padding: 12px;
 }
 .tool-prev-box h3 {
     color: #000;
@@ -112,9 +114,7 @@
     font-weight: 700;
     text-align: center;
 }
-.tool-prev-box :hover {
-    background: #ffdbad;
-}
+
 .tools-pane {
     display: flex;
     border: 1px solid #d5d5d5;
