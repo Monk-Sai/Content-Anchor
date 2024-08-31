@@ -233,6 +233,10 @@ nav a {
 
 .banner-fold {
   background: #fed7c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 .banner-fold-col {
   padding: 20px 0;
@@ -244,9 +248,19 @@ nav a {
   font-size: larger;
   font-weight: 500;
   padding: 25px 0;
+  width: 35%;
+}
+.banner-fsl h2 {
+  color: orangered;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px #050505;
 }
 .banner-fsr {
-
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  align-items: center;
 }
 
 .hero-fold {
@@ -351,6 +365,73 @@ nav a {
   width: 40%;
 }
 
+.fold2-5 {
+  padding: 50px 20px;
+}
+.fold2-5-content {
+  padding: 25px 20px;
+  text-align: center;
+}
+.fold2-5-content h2 {
+  color: orangered;
+  text-shadow: 2px 2px 0px #000;
+  font-size: 3rem;
+}
+.f2-5-content-carousal {
+  display: flex;
+  justify-content: space-evenly;
+}
+.f2-5-img-carousal {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  align-items: center;
+}
+.f2-5-svg-btn-left, .f2-5-svg-btn-right {
+  display: flex;
+  width: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.f2-5-svg-btn-left img, .f2-5-svg-btn-right img {
+  cursor: pointer;
+}
+.f2-5-cc-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+}
+.f2-5-cc-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+  width: 85%;
+}
+.f2-5-cc-2 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+  width: 85%;
+}
+.f2-5-cc-3 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+  width: 85%;
+}
+
 .fold-3 {
   display: flex;
   align-items: center;
@@ -363,6 +444,19 @@ nav a {
   text-align: center;
 }
 .fold-3-content {
+  padding: 25px 20px;
+}
+
+.fold-3-5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.fold-3-5 h2 {
+  padding: 25px 20px;
+}
+.fold-3-5-content {
   padding: 25px 20px;
 }
 
@@ -381,6 +475,7 @@ nav a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 .fold-4-h3-p {
   width: 45%;
@@ -390,12 +485,28 @@ nav a {
   display: flex;
   width: 375px;
 }
+.fold-4-hide-seek-con,
+.fold-4-hide-seek-con1, 
+.fold-4-hide-seek-con2, 
+.fold-4-hide-seek-con3,
+.fold-4-hide-seek-con4 {
+  border-bottom: 2px solid;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0;
+  flex-direction: column;
+}
+
 .fold-4-hide-seek-con h3,
 .fold-4-hide-seek-con1 h3, 
 .fold-4-hide-seek-con2 h3, 
 .fold-4-hide-seek-con3 h3,
 .fold-4-hide-seek-con4 h3 {
   cursor: pointer;
+  padding: 5px 0;
+  text-align: center;
 }
 .fold-4-hide-seek-con p, 
 .fold-4-hide-seek-con1 p, 
@@ -403,6 +514,7 @@ nav a {
 .fold-4-hide-seek-con3 p,
 .fold-4-hide-seek-con4 p {
   display: none;
+  text-align: center;
 }
 
 /* Add this media query for screens below 600px */
@@ -537,5 +649,37 @@ nav a {
   .fold-4-content img {
     display: flex;
     width: 375px;
+  }
+
+  .banner-fold {
+    background: #fed7c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .banner-fold-col {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-fsl {
+    font-size: larger;
+    font-weight: 500;
+    padding: 25px 0;
+    width: 90%;
+  }
+  .banner-fsr {
+    width: 100%;
+    padding: 0;
+  }
+
+  .f2-5-content-carousal {
+    display: flex;
+    flex-direction: column;
+  }
+  .f2-5-img-carousal {
+    width: auto;
   }
 }
