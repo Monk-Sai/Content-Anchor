@@ -11,8 +11,7 @@
 .first-fold {
     display: flex;
     flex-direction: column;
-    height: 50ch;
-    padding: 25px;
+    padding: 50px 25px;
     align-items: center;
     justify-content: space-evenly;
     background-color: #ffc397;
@@ -247,10 +246,16 @@ th, td {
         width: 100%;
         padding: 20px 0;
     }
+
+    .first-fold p {
+        text-align: center;
+        font-size: 1.25rem;
+        width: 100%;
+    }
 }
 
-/* Text to HTML */
 
+/* Text to HTML */
 .output-sec {
     display: flex;
     width: 100%;

@@ -834,6 +834,9 @@ nav a {
   .f2-5-img-carousal {
     width: 100%;
   }
+  .f2-5-img-carousal img {
+    width: 100%;
+  }
   .f2-5-cc-main {
     display: flex;
     justify-content: space-evenly;
