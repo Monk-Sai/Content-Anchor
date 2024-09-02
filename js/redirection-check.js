@@ -1,4 +1,4 @@
-document.querySelector('.input-submit-btn button').addEventListener('click', async () => {
+async function checkUrlStatus() {
     const urlInput = document.getElementById('url').value;
     const resultsDiv = document.getElementById('results');
 
@@ -11,14 +11,15 @@ document.querySelector('.input-submit-btn button').addEventListener('click', asy
     }
 
     try {
+        // Attempt to fetch the URL
         const response = await fetch(urlInput, {
-            method: 'HEAD', // Use 'HEAD' to fetch only headers
-            mode: 'no-cors' // This might cause the browser to not provide the response status due to CORS
+            method: 'GET',
+            mode: 'cors'
         });
 
         let statusMessage = '';
 
-        if (response.status >= 200 && response.status < 300) {
+        if (response.ok) {
             statusMessage = `Good URL: ${response.status} OK`;
         } else if (response.status >= 300 && response.status < 400) {
             if (response.status === 301) {
@@ -28,13 +29,17 @@ document.querySelector('.input-submit-btn button').addEventListener('click', asy
             } else {
                 statusMessage = `Redirect: ${response.status}`;
             }
+        } else if (response.status >= 400 && response.status < 500) {
+            statusMessage = `Client Error: ${response.status}`;
+        } else if (response.status >= 500) {
+            statusMessage = `Server Error: ${response.status}`;
         } else {
-            statusMessage = `Error: ${response.status}`;
+            statusMessage = `Unexpected Status: ${response.status}`;
         }
 
         resultsDiv.innerHTML = `<p>Status: ${statusMessage}</p>`;
     } catch (error) {
         console.error('Error fetching the URL:', error);
-        resultsDiv.innerHTML = '<p>Error fetching the URL. Check the console for details.</p>';
+        resultsDiv.innerHTML = '<p>Error fetching the URL. It might be blocked due to CORS policy.</p>';
     }
-});
+}
