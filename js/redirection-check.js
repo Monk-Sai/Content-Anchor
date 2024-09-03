@@ -11,35 +11,33 @@ async function checkUrlStatus() {
     }
 
     try {
-        // Attempt to fetch the URL
-        const response = await fetch(urlInput, {
-            method: 'GET',
-            mode: 'cors'
+        const response = await fetch('http://localhost:3000/check-url', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ url: urlInput })
         });
+
+        const data = await response.json();
 
         let statusMessage = '';
 
-        if (response.ok) {
-            statusMessage = `Good URL: ${response.status} OK`;
-        } else if (response.status >= 300 && response.status < 400) {
-            if (response.status === 301) {
-                statusMessage = `Permanent Redirect: ${response.status}`;
-            } else if (response.status === 302) {
-                statusMessage = `Temporary Redirect: ${response.status}`;
-            } else {
-                statusMessage = `Redirect: ${response.status}`;
-            }
-        } else if (response.status >= 400 && response.status < 500) {
-            statusMessage = `Client Error: ${response.status}`;
-        } else if (response.status >= 500) {
-            statusMessage = `Server Error: ${response.status}`;
+        if (data.status >= 200 && data.status < 300) {
+            statusMessage = `Good URL: ${data.status} OK`;
+        } else if (data.status >= 300 && data.status < 400) {
+            statusMessage = `Redirect: ${data.status}`;
+        } else if (data.status >= 400 && data.status < 500) {
+            statusMessage = `Client Error: ${data.status}`;
+        } else if (data.status >= 500) {
+            statusMessage = `Server Error: ${data.status}`;
         } else {
-            statusMessage = `Unexpected Status: ${response.status}`;
+            statusMessage = `Unexpected Status: ${data.status}`;
         }
 
         resultsDiv.innerHTML = `<p>Status: ${statusMessage}</p>`;
     } catch (error) {
         console.error('Error fetching the URL:', error);
-        resultsDiv.innerHTML = '<p>Error fetching the URL. It might be blocked due to CORS policy.</p>';
+        resultsDiv.innerHTML = '<p>Error fetching the URL.</p>';
     }
 }
