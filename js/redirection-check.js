@@ -11,14 +11,16 @@ async function checkUrlStatus() {
     }
 
     try {
+        // Fetch with manual redirect handling
         const response = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(urlInput)}`, {
-            method: 'GET'
+            method: 'GET',
+            redirect: 'manual' // Prevents automatic following of redirects
         });
 
         let statusMessage = '';
 
-        // If the fetch request is successful, check the response status
-        if (response.status >= 200 && response.status < 300) {
+        // Check the status code of the response
+        if (response.status === 200) {
             statusMessage = `Good URL: ${response.status} OK`;
         } else if (response.status >= 300 && response.status < 400) {
             statusMessage = `Redirect: ${response.status}`;
