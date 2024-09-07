@@ -1,25 +1,22 @@
-async function checkUrlStatus() {
-    const urlInput = document.getElementById('url').value;
-    const resultsDiv = document.getElementById('results');
+const express = require('express');
+const axios = require('axios');
+const app = express();
 
-    // Clear previous results
-    resultsDiv.innerHTML = '';
-
-    if (!urlInput) {
-        resultsDiv.innerHTML = '<p>Please enter a URL.</p>';
-        return;
-    }
+app.get('/check-status', async (req, res) => {
+    const { url } = req.query;
 
     try {
-        // Fetch with manual redirect handling
-        const response = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(urlInput)}`, {
-            method: 'GET',
-            redirect: 'manual' // Prevents automatic following of redirects
+        // Axios request with manual handling of redirects
+        const response = await axios.get(url, {
+            maxRedirects: 0, // No automatic redirect following
+            validateStatus: function (status) {
+                return status >= 200 && status < 600; // Accept all status codes
+            }
         });
 
         let statusMessage = '';
 
-        // Check the status code of the response
+        // Determine the type of status
         if (response.status === 200) {
             statusMessage = `Good URL: ${response.status} OK`;
         } else if (response.status >= 300 && response.status < 400) {
@@ -32,9 +29,32 @@ async function checkUrlStatus() {
             statusMessage = `Unexpected Status: ${response.status}`;
         }
 
-        resultsDiv.innerHTML = `<p>Status: ${statusMessage}</p>`;
+        res.json({ statusMessage });
+
     } catch (error) {
         console.error('Error fetching the URL:', error);
-        resultsDiv.innerHTML = '<p>Error fetching the URL. It might be blocked due to CORS policy or network issues.</p>';
+        res.json({ statusMessage: 'Error fetching the URL' });
     }
-}
+});
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+});
+
+document.getElementById('checkStatus').addEventListener('click', async () => {
+    const urlInput = document.getElementById('url').value;
+    const resultsDiv = document.getElementById('results');
+
+    if (urlInput) {
+        try {
+            const response = await fetch(`http://localhost:3000/check-status?url=${encodeURIComponent(urlInput)}`);
+            const data = await response.json();
+            resultsDiv.textContent = data.statusMessage;
+        } catch (error) {
+            resultsDiv.textContent = 'Error: Could not fetch the URL status';
+        }
+    } else {
+        resultsDiv.textContent = 'Please enter a valid URL';
+    }
+});
