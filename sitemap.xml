@@ -12,3 +12,16 @@
     <loc>https://contentanchor.com/content-and-seo-tools/</loc>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://contentanchor.com/content-and-seo-tools/ngrams-seo</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://contentanchor.com/content-and-seo-tools/text-to-html-ratio</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://contentanchor.com/content-and-seo-tools/redirection-checker</loc>
+    <priority>1</priority>
+  </url>
+  </urlset>
